@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ root_url }}/global.css">
+
+    <link rel="stylesheet" type="text/css" href="{{ root_url }}/slide.css">
+    <link rel="stylesheet" type="text/css" href="{{ root_url }}/solarized-light.css">
+
+    <link rel="next-slide" type="text/html" href="{{ next_slide_url }}">
+    <link rel="previous-slide" type="text/html" href="{{ previous_slide_url }}">
+
+    <script src="{{ root_url }}/zepto.min.js"></script>
+    <script src="{{ root_url }}/rainbow.min.js"></script>
+    <script src="{{ root_url }}/slide.js"></script>
+  </head>
+  <body>
+    <!--
+    <header>
+      <h1>
+        {{ presentation_title }}
+        <small>{{ page }}</small>
+      </h1>
+    </header>
+    -->
+
+    {{ slide }}
+  </body>
+</html>

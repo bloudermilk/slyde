@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+article {
+  padding: 2em;
+  font-size: 1.75em;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
