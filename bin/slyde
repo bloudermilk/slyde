@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby
+
+path = ARGV[0]
+
+def log(msg)
+  puts msg.split($/).map { |l| "--  #{l}" }.join($/)
+end
+
+if !path || %W[-h --help].include?(path)
+  log "Usage: slyde <path>"
+  log "Summary: slyde accepts one parameter, a path for your new presentation"
+  abort
+end
+
+log "Starting a new Slyde presentation in \"#{path}\""
+
+require "fileutils"
+
+example_project = File.expand_path("../../example", __FILE__)
+FileUtils.cp_r(example_project, path)
+
+log "Installing dependencies"
+
+Dir.chdir(path) do
+  system("bundle install")
+end
+
+log <<-DOC
+Slyde is finished setting up your presentation. To get started:
+
+    $ cd #{path}
+    $ rackup
+ 
+DOC

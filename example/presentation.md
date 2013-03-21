@@ -1,35 +1,23 @@
-# Doing stuff with things
+# Getting started with Slyde
 
-## What is stuff?
+## How does Slyde work?
 
-This is an important question to ask.
+### Markdown
 
-### Stuff is good
+Slyde takes a Markdown document and splits it up into slides wherever it finds a
+first, second, or third-level header.
 
-Well, some stuff.
+### Formatting
 
-### Here is some stuff
+Slyde supports any formatting that Markdown does, including the
+not-so-standard features like tables and code fences.
 
-* Shoe
-* Cantaloupe
-* Antelope
-* Rhyme
+## Who done it?
 
-## Doing stuff
+Slyde was built by Brendan Loudermik ([@bloudermilk][bloudermilk]).
 
-Okay bud, so how do we actually do stuff?
+[bloudermilk]: http://bloudermilk.com/
 
-### Well, start by picking some stuff to do
+### Getting started
 
-> There once was a man who picked some stuff
-> He picked it good and well
-> But as it turned out, this man was tough
-> And under some sort of spell
-
-### So this about wraps it up
-
-Did you notice all the nice formatting? Yeah... just Markdown
-
-## Fin
-
-Thanks for watching!
+Open up your new project and edit `presentation.md`.

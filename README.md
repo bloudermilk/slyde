@@ -1,24 +1,39 @@
 # Slyde
 
-TODO: Write a gem description
+Slyde is a Markdown-based slide authoring and presentation tool written in Ruby
+and JavaScript.
+
+## How it works
+
+Slyde takes normal markdown files and parses them into indavidual slides by
+using first, second, and third-level headers as page breaks. Then it serves
+those slides over HTTP using a simple Sinatra backend. 
+
+## Why use Slyde?
+
+* **Rapid content development:** Creating a new presentation is as easy as
+  writing some Markdown and running `rackup`. No more bloated WYSIWYG!
+* **Collaborative content:** Traditional slide presentation tools like
+  PowerPoint and Keynote make it nearly impossible to collaborate on
+  presentations. By using Markdown as the basis for slide content, authors can
+  use Git or any version control system to collaborate on a single
+  presentation effectively.
+* **Portability:** Since presentations are witten in Markdown, one can use any
+  number of Markdown-based tools to distribute content. 
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Install the latest verison of Slyde:
 
-    gem 'slyde'
+```bash
+$ gem install slyde
+```
 
-And then execute:
+Start a new presentation using the `slyde` command:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install slyde
-
-## Usage
-
-TODO: Write usage instructions here
+```bash
+$ slyde my_new_presentation
+```
 
 ## Contributing
 
@@ -27,3 +42,8 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## License
+
+Slyde is an open source software project released under the MIT license. See
+`MIT-LICENSE.txt` in the project root for more details.
