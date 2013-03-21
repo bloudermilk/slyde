@@ -3,6 +3,12 @@
 Slyde is a Markdown-based slide authoring and presentation tool written in Ruby
 and JavaScript.
 
+**Warning:** Slyde is currently in a very alpha state. It's semi-broken and
+lacking some pretty fundamental features. Please see the [issues][issues] page
+for more information.
+
+[issues]: https://github.com/bloudermilk/slyde/issues
+
 ## How it works
 
 Slyde takes normal markdown files and parses them into indavidual slides by
@@ -33,6 +39,18 @@ Start a new presentation using the `slyde` command:
 
 ```bash
 $ slyde my_new_presentation
+```
+
+Change directories into your new project:
+
+```bash
+$ cd my_new_presentation
+```
+
+Start a Rack server:
+
+```bash
+$ rackup
 ```
 
 ## Contributing
