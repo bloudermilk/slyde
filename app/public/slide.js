@@ -10,6 +10,8 @@ $(function () {
     }
   });
 
+  $("code[data-language='notes']").parent().hide();
+
   function go (direction) {
     var $link = $("link[rel=" + direction + "-slide]"),
         href = $link.attr("href");
